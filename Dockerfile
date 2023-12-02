@@ -3,6 +3,6 @@ WORKDIR /app
 COPY . .
 RUN go build -o main
 
-FROM alpine:3.18
-COPY --from=builder /app/main ./bin
-CMD [ "main" ]
+FROM scratch
+COPY --from=builder /app/main .
+CMD [ "./main" ]

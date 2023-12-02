@@ -12,4 +12,4 @@
 - build dockerfile  
 `docker build -t fullcycle .`  
 - run container  
-`docker run -it fullcycle sh`  
+`docker run fullcycle`  
